@@ -7,55 +7,93 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header">
-      <a class="header-logo" href="index.html">вывіх мыслення</a>
-      <nav class="header-menu">
-        <ul class="header-menu-list">
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="index.html">Галоўная</a>
+    <div class="page-container">
+      <header class="header">
+        <a class="header-logo" href="index.html">вывіх мыслення</a>
+        <nav class="header-menu">
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="index.html">Галоўная</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="handbook.html">Падручнік</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="notes.html">Дадаткі</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="translations.html">Пераклады</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link is-current" href="about.html"
+                >Пра праект</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="header-read-reference" href="/">Чытаць</a>
+          <button class="header-burger-button" type="button">
+            <span class="header-burger-button-line"></span>
+            <span class="header-burger-button-line"></span>
+            <span class="header-burger-button-line"></span>
+          </button>
+        </div>
+      </header>
+      <main class="container main-container">
+        <article class="about">
+          <img
+            class="rounded-image"
+            src="./images/afina-logo.png"
+            alt="Лагатып праекту 'вывіх мыслення'
+          - сава Афіна"
+          />
+          <header>
+            <h2>вывіх мыслення</h2>
+          </header>
+          <p>
+            Праект па стварэнні падручніка па філасофіі на беларускай мове для
+            падлеткаў і ўсіх цікаўных
+          </p>
+        </article>
+      </main>
+      <footer class="footer">
+        <p class="copyright">&copy вывіх мыслення, Яўген Кунцэвіч</p>
+        <ul class="footer-menu-list">
+          <li>
+            <a href="mailto:jauhien.k@gmail.com"
+              ><img
+                class="contacts-icon"
+                src="./images/email-icon.svg"
+                alt="Напісаць на электронную пошту"
+                width="40"
+                height="40"
+            /></a>
           </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="handbook.html">Падручнік</a>
+          <li>
+            <a
+              href="https://www.instagram.com/luxation.of.thinking"
+              target="_blank"
+              ><img
+                src="./images/instagram-icon.svg"
+                alt="Наведаць старонку ў Instagram"
+                width="40"
+                height="40"
+            /></a>
           </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="notes.html">Дадаткі</a>
-          </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="translations.html">Пераклады</a>
-          </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link is-current" href="about.html"
-              >Пра праект</a
-            >
+          <li>
+            <a
+              href="https://www.patreon.com/luxation_of_thinking"
+              target="_blank"
+              ><img
+                src="./images/patreon-icon.svg"
+                alt="Падтрымаць на Patreon"
+                width="35"
+                height="35"
+            /></a>
           </li>
         </ul>
-      </nav>
-      <div class="header-actions">
-        <a class="header-read-reference" href="/">Чытаць</a>
-        <button class="header-burger-button" type="button">
-          <span class="header-burger-button-line"></span>
-          <span class="header-burger-button-line"></span>
-          <span class="header-burger-button-line"></span>
-        </button>
-      </div>
-    </header>
-    <main class="container">
-      <article class="about">
-        <img
-          class="rounded-image"
-          src="./images/afina-logo.png"
-          alt="Лагатып праекту 'вывіх мыслення'
-        - сава Афіна"
-        />
-        <header>
-          <h2>вывіх мыслення</h2>
-        </header>
-        <p>
-          Праект па стварэнні падручніка па філасофіі на беларускай мове для
-          падлеткаў і ўсіх цікаўных
-        </p>
-      </article>
-    </main>
-    <footer></footer>
+      </footer>
+    </div>
   </body>
 </html>
