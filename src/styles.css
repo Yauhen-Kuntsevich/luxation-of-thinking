@@ -169,6 +169,8 @@ p::selection {
 
 .main-container {
   flex: 1;
+  border-bottom: 1px solid var(--color-light-gray);
+  padding-bottom: 30px;
 }
 
 .rounded-image {
@@ -289,9 +291,7 @@ p::selection {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-block: 20px 20px;
-  border-top: 1px solid var(--color-light-gray);
-  margin-top: 30px;
+  padding-block: 20px 30px;
 }
 
 .footer-menu-list {
@@ -306,9 +306,9 @@ p::selection {
   margin-bottom: 20px;
 }
 
-.contacts-icon {
-  width: '24px';
-  height: '24';
+.footer img {
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -359,19 +359,9 @@ p::selection {
     padding-inline: 18px;
   }
 
-  .footer {
-    margin-top: 15px;
-    padding-block: 10px;
-    margin-top: 15px;
-  }
-
   .copyright {
     font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  .footer-menu-list img {
-    width: 25px;
-    height: 25px;
+    color: var(--color-light);
+    margin-bottom: 15px;
   }
 }
