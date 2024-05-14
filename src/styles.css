@@ -147,6 +147,9 @@ button {
 
 a {
   color: var(--color-light);
+}
+
+.link-decoration-none {
   text-decoration: none;
 }
 
@@ -220,6 +223,7 @@ p::selection {
   line-height: 2;
   letter-spacing: 1.2px;
   text-transform: lowercase;
+  text-decoration: none;
   border: var(--border);
   border-radius: var(--border-radius);
   flex: 1;
@@ -295,7 +299,7 @@ p::selection {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 100px;
+  margin: 50px;
 }
 
 .card-field {
