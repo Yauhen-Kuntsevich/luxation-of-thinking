@@ -161,6 +161,11 @@ p::selection {
   background-color: var(--color-light-gray);
 }
 
+.page-title {
+  text-align: center;
+  margin-block: 30px;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -233,21 +238,32 @@ p::selection {
   column-gap: 40px;
 }
 
-.header-read-reference {
+.read-button {
   display: inline-flex;
   align-items: center;
   height: 38px;
   padding-inline: 26px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.2px;
   text-transform: lowercase;
   border: var(--border);
   border-radius: var(--border-radius);
+  flex: 1;
 }
 
-.header-read-reference:hover {
+.read-button-white {
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.read-button-white:hover {
+  color: var(--color-dark);
+  background-color: var(--color-light-gray);
+}
+
+.read-button:hover {
   border-color: var(--color-light-gray);
 }
 
@@ -284,6 +300,19 @@ p::selection {
   justify-content: center;
   text-align: center;
   margin: 100px;
+}
+
+.card-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-card {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 20px;
 }
 
 .footer {
