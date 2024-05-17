@@ -133,7 +133,7 @@ svg * {
 }
 
 body {
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-base), sans-serif;
   font-weight: 300;
   font-size: 22px;
   line-height: 1.75;
@@ -175,7 +175,7 @@ p::selection {
 }
 
 .header-logo {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', var(--font-family-base), sans-serif;
   font-size: 24px;
   letter-spacing: 1.1px;
   white-space: nowrap;
