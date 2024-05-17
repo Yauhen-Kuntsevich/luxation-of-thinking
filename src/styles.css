@@ -117,6 +117,7 @@ svg * {
 
 :root {
   --color-dark: #000;
+  --color-dark-alternate: #131619;
   --color-light: #fff;
   --color-dark-gray: #404040;
   --color-light-gray: #c4c4c4;
@@ -147,11 +148,10 @@ button {
 
 a {
   color: var(--color-light);
-  text-decoration: none;
 }
 
-a:hover {
-  color: var(--color-light-gray);
+.link-decoration-none {
+  text-decoration: none;
 }
 
 h1::selection,
@@ -171,6 +171,7 @@ p::selection {
   align-items: baseline;
   column-gap: 20px;
   padding-inline: 32px;
+  background-color: var(--color-dark-alternate);
 }
 
 .header-logo {
@@ -220,6 +221,7 @@ p::selection {
   line-height: 2;
   letter-spacing: 1.2px;
   text-transform: lowercase;
+  text-decoration: none;
   border: var(--border);
   border-radius: var(--border-radius);
   flex: 1;
@@ -228,15 +230,6 @@ p::selection {
 .read-button-white {
   color: var(--color-dark);
   background-color: var(--color-light);
-}
-
-.read-button-white:hover {
-  color: var(--color-dark);
-  background-color: var(--color-light-gray);
-}
-
-.read-button:hover {
-  border-color: var(--color-light-gray);
 }
 
 .header-burger-button {
@@ -253,11 +246,6 @@ p::selection {
   border-radius: var(--border-radius);
 }
 
-.header-burger-button:hover {
-  color: var(--color-light-gray);
-  border-color: currentColor;
-}
-
 .header-burger-button-line {
   width: 6px;
   height: 1px;
@@ -268,6 +256,15 @@ p::selection {
 .page-title {
   text-align: center;
   margin-block: 30px;
+}
+
+.centered-text {
+  text-align: center;
+  margin-block: 20px;
+}
+
+.base-list {
+  list-style: none;
 }
 
 .page-container {
@@ -295,7 +292,7 @@ p::selection {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 100px;
+  margin: 50px;
 }
 
 .card-field {
@@ -363,6 +360,27 @@ p::selection {
 
   .container {
     width: 80%;
+  }
+}
+
+@media (hover: hover) {
+  .read-button-white:hover {
+    color: var(--color-dark);
+    background-color: var(--color-light-gray);
+  }
+
+  .read-button:hover {
+    border-color: var(--color-light-gray);
+    transform: scale(1.1);
+  }
+
+  .header-burger-button:hover {
+    color: var(--color-light-gray);
+    border-color: currentColor;
+  }
+
+  a:hover {
+    color: var(--color-light-gray);
   }
 }
 
